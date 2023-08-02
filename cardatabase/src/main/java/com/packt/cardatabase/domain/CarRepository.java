@@ -4,7 +4,10 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
+
+@RepositoryRestResource//(path="vehicles")
 public interface CarRepository extends CrudRepository<Car, Long>{
 // <table명, PK형> 형태로 작성
 	// 브랜드로 자동차 검색, SQL문을 이용해 브랜드로 자동차를 검색
